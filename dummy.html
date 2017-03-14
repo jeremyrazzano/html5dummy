@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML5 Dummy Page</title>
+    </head>
+    <body>
+        <header id="top">
+            <h1>HTML Dummy Page</h1>
+            <p>HTML Soup for your CSS Soul</p>
+            <nav role="navigation">
+                <ul style="list-style: none; display: flex; justify-content: space-around;">
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#tables">Tables and Lists</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#linksforms">Links, Forms and Controls</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div><p>This is a list of HTML5 elements, sometimes several in various ways. Some may not appear, depending on your browser. </p>
+            <p>Some elements may appear to be incorrect due to useragent stylesheets which vary from browser to browser.</p>
+            <p>Tags are placed within semantic elements in the following format:</p>
+            <ul>
+                <li>Main Categories [article]</li>
+                <ul>
+                    <li>Title [header]</li>
+                    <li>Element Lists [sections]</li>
+                    <li>Link to top [footer]</li>
+                </ul>
+            </ul>
+            <p>This may cause some elements to appear incorrectly - for example, in Chrome, H1 tags within an Article are smaller.</p>
+            <p>I'll try to update with tags as they're commonly used together.</p>
+            
+            <article id="typography">
+                <header><h2>Typography</h2></header>
+                <section id="headers">
+                    <h3>Headings</h3>
+                    <h1>Heading 1</h1> 
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h5>Heading 6</h5>
+                </section>
+                <section id="body-copy">
+                    <h3>Body Copy - General Text Elements</h3>
+                    <br>
+                    <p>THIS IS A PARAGRAPH. Incididunt et fugiat commodo eu eu enim quis deserunt sit proident ea nulla exercitation. Minim ex sint culpa laborum id in. Nostrud veniam pariatur cupidatat occaecat minim. Laboris et nisi deserunt esse sunt. Ea esse mollit dolor quis sunt ad dolor magna ut esse Lorem eu exercitation eu.</p>
+                    <span>This is a span.</span><br>
+                    <span>This is a long span; same element as above, just with long text. Non do fugiat amet sint elit aliquip mollit laboris sunt tempor nulla anim do.</span><br>
+                    <b>This is *b*old</b><br>
+                    <strong>This is strong. This tag means its important.</strong><br>
+                    <i>This is *i*talic.</i><br>
+                    <em>Now try it with *em*phasis. That emans its semantically important.</em><br>
+                    <mark>And here we mark something.</mark><br>
+                    <small>Is small still supported by HTML5?</small><br>
+                    <del>Text that is to be *del*eted.</del><br>
+                    <ins>This text is to be *ins*erted.</ins><br>
+                    <sub>Subscripted text. Down below.</sub><br>
+                    <sup>Superscript - it's really super.</sup><br>
+                    <q>This is an inline *q*oute - for quick quoting.</q><br>
+                    <cite>This is a *cite*. Useful for citing sources inline</cite><br>
+                    <blockquote>This is blockquote. In ea commodo ut eu. Voluptate dolor do ad ipsum cupidatat voluptate dolore non veniam pariatur quis cupidatat laborum.</blockquote>
+                    <abbr title="abreviations">ABBR</abbr><br>
+                </section>
+                <section id="misc-text">
+                    <h3>Misc. Inline and Block Text Elements</h3>
+                    <address>
+                        An Address Block<br>
+                        1212 Easy Street<br>
+                        Alexandria, VI 10801<br>
+                        github.com<br>
+                        Box 562, Disneyland<br>
+                        USA<br>
+                    </address>
+                    <bdo  dir="rtl">This is a *bdo* tag, for bidirectional text.</bdo>
+                    <code>
+                        This is code.
+                        Followed by more code.
+                        And this bit of code, too.
+                    </code>
+                    <kbd> This is inside a [kbd] element.</kbd>
+                    <samp>
+                        This is a [samp]. It's for sample output.
+                        It's similar to code, but varies semantically.
+                    </samp>
+                    <pre>
+                        This is [pre]. Its preformatted to 
+                        preserve
+                                        whitespace.
+                                and line breaks.
+                    </pre>
+                    <var>A *var*iable element.</var>
+                </section>
+                <footer><a href="top">[Top]</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Tables/Tabular Data</h2>
+                </header>
+                <section>
+                    <h3>Tables</h3><br>
+                        <table>
+                            <caption>Table Caption</caption>
+                            <thead><caption>Table Caption Inside [thead]</caption>
+                                <th>Col Heading1</th>
+                                <th>Col Heading2</th>
+                                <th>Col Heading3</th>
+                                <th>Col Heading4</th>
+                                <th>Col Heading5</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data.1.1</td>
+                                    <td>Data.1.2</td>
+                                    <td>Data.1.3</td>
+                                    <td>Data.1.4</td>
+                                    <td>Data.1.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Data.2.1</td>
+                                    <td>Data.2.2</td>
+                                    <td>Data.2.3</td>
+                                    <td>Data.2.4</td>
+                                    <td>Data.2.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Data.3.1</td>
+                                    <td colspan="2">[colspan]Data.3.2</td>
+                                    <td>Data.3.4</td>
+                                    <td>Data.3.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Data.4.1</td>
+                                    <td>Data.4.2</td>
+                                    <td>Data.4.3</td>
+                                    <td>Data.4.4</td>
+                                    <td rowspan="2">[rowspan]<wbr>Data.4.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Data.2.1</td>
+                                    <td>Data.2.2</td>
+                                    <td>Data.2.3</td>
+                                    <td>Data.2.4</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>Table Footer for more tabular info</tfoot>
+                        </table>
+                </section>
+                <section id="lists">
+                    <h3>Lists</h3>
+                    <br>
+                    <ul>
+                        <li>List Item1</li>
+                        <li>List Item2</li>
+                        <li>List Item3</li>
+                        <li>List Item4</li>
+                        <ul>
+                            <li>Next List Item1</li>
+                            <li>Next List ITem2</li>
+                            <li>Next List Item3</li>
+                            <ul>
+                                <li>Last List Item</li>
+                                <li>Last List Item</li>
+                            </ul>
+                            <li>Next List Item4</li>
+                        </ul>
+                        <li>List Item5</li>
+                    </ul>
+                    <ol>
+                        <li>List Item1</li>
+                        <li>List Item2</li>
+                        <li>List Item3</li>
+                        <li>List Item4</li>
+                        <ol>
+                            <li>Next List Item1</li>
+                            <li>Next List ITem2</li>
+                            <li>Next List Item3</li>
+                            <ol>
+                                <li>Last List Item</li>
+                                <li>Last List Item</li>
+                            </ol>
+                            <li>Next List Item4</li>
+                        </ol>
+                        <li>List Item5</li>
+                    </ol>
+                </section>
+                <footer><a href="top">[TOP]</a></footer>
+            </article>
+            <article id="media">
+                <header>
+                    <h2>Media</h2>
+                </header>
+                <section id="images">
+                    <h3>Images And Formats</h3>
+                    <br>
+                    <h4>Image [img]</h4>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="100" height="100" alt="Test Image">
+                    <h4>Picture [picture/source]</h4>
+                    <picture width="100" height="100">
+                        <source src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  media="(max-width: 769px)">
+                        <source src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" >
+                    </picture>
+                    <h4>SVG [svg]</h4>
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    </svg>
+                </section>
+                <section id="other-media">
+                    <h3>Other Media</h3>
+                    <br>
+                    <h4>Audio</h4>
+                    <audio>
+                    </audio>
+                    <h4>Audio with Controls</h4>
+                    <audio controls="controls">
+                    </audio>
+                    <h4>Video</h4>
+                    <video width="100" height="100" ></video>
+                    <video controls="controls"  width="100" height="100" ></video>
+                    <h4>Canvas</h4>
+                    <canvas>
+                    </canvas>
+                    <h4>I-Frame</h4>
+                    <iframe src="http://www.google.com/" width="400" height="150">
+                    </iframe>
+                </section>
+                <footer><a href="#top">[TOP]</a></footer>
+            </article>
+            <article id="linksforms">
+                <header>
+                    <h2>Links and Forms</h2>
+                </header>
+                <section id="link">
+                    <h3>Text Link</h3><br>
+                    <a href="#">Link Text</a>
+                    <nav><a href="#">Link in Nav</a></nav>
+                    <br>
+                    <h3>Image Link</h3>
+                    <a href="#"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Link Image"></a>
+                </section>
+                <section id="form">
+                    <h3>Form</h3>
+                    <form>
+                        <h4>Inputs/No Labels</h4>
+                        <input type="text" placeholder="Input Text"><br>
+                        <input type="radio" name="radio"><br>
+                        <input type="radio" name="radio"><br>
+                        <input type="radio" name="radio"><br>
+                        <input type="checkbox"><br>
+                        <input type="textarea"><br>
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist> <br>
+                        <input type="reset"><br>
+                        <input type="submit"><br>
+                    </form>
+                    <h3>Form With Labels and Fieldgroups</h3>
+                    <form>
+                        <fieldset>
+                            <legend>Legend For Fieldset</legend>
+                            <label for="text">Text: </label><input name="text" type="text" placeholder="This is a text field"><br>
+                            <label for="number">Number: </label><input name="number" type="number" placeholder="3.14156"><br>
+                            <label for="password">Password: </label><input name="password" type="password"><br>
+                            <label for="search">Search: </label><input name="search" type="search" placeholder="Search..."><br>
+                            <label for="email">Email: </label><input name="email" type="email" placeholder="example@example.com"><br>
+                            <label for="url">URL: </label><input name="url" type="url" placeholder="www.example.com"><br>
+                            <label for="tel">Tel: </label><input name="tel" type="tel" placeholder="999-999-9999"><br>
+                            <label for="date">Date: </label><input name="date" type="date"><br>
+                            <label for="time">Time: </label><input name="time" type="time"><br>
+                            <label for="week">Week: </label><input name="week" type="week"><br>
+                            <label for="month">Month: </label><input name="month" type="month"><br>
+                            <label for="datetime-local">Date/Time-local: </label><input name="datetime-local" type="datetime-local"><br>
+                            <label for="color">Color: </label><input name="color" type="color"><br>
+                            <label for="range">Range: </label><input name="range" type="range"><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Second Fieldset</legend>
+                            <label for="radio"><input type="radio" name="radio" value="1">Radio 1</label><br>
+                            <label for="radio"><input type="radio" name="radio" value="2">Radio 2</label><br>
+                            <label for="radio"><input type="radio" name="radio" value="3">Radio 3</label><br>
+                            <label for="select">Select</label><input name="select" list="browsers">
+                            <datalist id="browsers">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Buttons</legend>
+                            <input type="button" value="Button Type Input">
+                            <br><br>
+                            <button>Button</button>
+                            <br><br>
+                            <input type="reset" value="Reset Type">
+                            <input type="submit" value="Submit Type">
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+        </main>
+    </body>
+    <footer style="height: 50px;">
+    </footer>
+</html>
